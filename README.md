@@ -24,4 +24,14 @@ colmap mapper \
   --image_path ./data/train_images/ \
   --export_path ./data/train/sparse
 
+mkdir -p ./data/train/sparse/0_txt
+
+colmap model_converter \
+  --input_path ./data/train/sparse/0 \
+  --output_path ./data/train/sparse/0_txt \
+  --output_type TXT
+
+python colmap2nerf.py --text ./data/train/sparse/0_txt --images ./data/train_images --out ./data/train/transforms_train.json
+
+CUDA_VISIBLE_DEVICES=3 python train.py --config configs/your_own_data.txt
 ```
