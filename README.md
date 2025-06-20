@@ -3,6 +3,11 @@
 
 ## colmap
 ```
+#安装colmap
+sudo add-apt-repository ppa:colmap/colmap
+sudo apt-get update
+sudo apt-get install colmap
+
 #用xvfb进行运行提取特征
 xvfb-run colmap feature_extractor \
   --database_path ./data/train/database.db \
