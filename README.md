@@ -41,3 +41,7 @@ CUDA_VISIBLE_DEVICES=3 python train.py --config configs/your_own_data.txt
 ```
 CUDA_VISIBLE_DEVICES=2 python run_nerf.py --config config_lego.txt
 ```
+
+```
+CUDA_VISIBLE_DEVICES=1 python train.py --config configs/your_own_data.txt --ckpt log/train_88/train_88.th --render_only 1  --render_path 1
+```
