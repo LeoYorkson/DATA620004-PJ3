@@ -35,3 +35,6 @@ python colmap2nerf.py --text ./data/train/sparse/0_txt --images ./data/train_ima
 
 CUDA_VISIBLE_DEVICES=3 python train.py --config configs/your_own_data.txt
 ```
+
+![image](https://github.com/user-attachments/assets/7a1c4133-028a-4a3f-b0e5-a25f4886fe41)
+
