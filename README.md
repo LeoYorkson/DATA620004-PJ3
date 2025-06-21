@@ -49,3 +49,8 @@ CUDA_VISIBLE_DEVICES=1 python train.py --config configs/your_own_data.txt --ckpt
 ffmpeg -i input.mp4 -vf "setpts=8.0*PTS,fps=10,scale=640:-1:flags=lanczos" slow.gif
 
 ```
+![image](https://github.com/user-attachments/assets/2632f326-e0eb-4ca2-a7d0-d2aadaa066f6)
+
+
+![test_slow](https://github.com/user-attachments/assets/dde7feb7-adda-447d-98b2-c0fe45fa0983)
+
