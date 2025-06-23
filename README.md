@@ -101,6 +101,24 @@ cd ./gaussian-splatting
 ```bash
 ffmpeg -i input.mp4 -vf "setpts=2.0*PTS,fps=10,scale=640:-1:flags=lanczos" output.gif
 ```
+#### 📉 训练过程可视化
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/01b3226f-0852-4ad1-af2c-59903c6965a4" width="500"/>
+</div>
+<div align="center"><b>NeRF 训练曲线</b></div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b85b1187-83bb-4ac9-bc5e-a79afaed447b" width="400"/>
+  <img src="https://github.com/user-attachments/assets/5d1c95f6-00c1-4778-9570-32b69f55079a" width="400"/>
+</div>
+<div align="center"><b>3D Gaussian Splatting：Loss 曲线与 PSNR 曲线</b></div>
+
+
+
+
 ---
 ### 🔗 模型与视频下载链接
 
