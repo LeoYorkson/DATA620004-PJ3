@@ -69,3 +69,27 @@ colmap model_converter \
   --output_type TXT
 
 python colmap2nerf.py --text ./data/train/sparse/0_txt --images ./data/train_images --out ./data/train/transforms_train.json
+```
+
+### 2️⃣ 各方法训练入口
+#### ▶️ 原版 NeRF
+```bash
+cd ./nerf_pytorch
+python run_nerf.py --config configs/own_data.txt
+```
+
+#### ▶️ TensoRF（加速 NeRF）
+```bash
+cd ./TensoRF
+python train.py --config configs/your_own_data.txt
+```
+#### ▶️ 3D Gaussian Splatting
+```bash
+cd ./gaussian-splatting
+# 按照官方说明运行 convert.py + train.py + render.py
+```
+
+### 🎬 实验结果可视化
+我们将每种方法生成的视频裁剪统一尺寸，并转换为 GIF 与 MP4：
+
+<div align="center"> <img src="https://github.com/user-attachments/assets/eb794283-158c-40ba-929c-36fef3b0dfa8" width="320"/> <img src="https://github.com/user-attachments/assets/acfae0e0-6db4-421d-bb53-d8897c22049f" width="320"/> </div>
