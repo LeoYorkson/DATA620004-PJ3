@@ -55,3 +55,8 @@ ffmpeg -i input.mp4 -vf "setpts=2.0*PTS,fps=10,scale=640:-1:flags=lanczos" slow.
 
 ![牛头怪_wo_bg](https://github.com/user-attachments/assets/acfae0e0-6db4-421d-bb53-d8897c22049f)
 
+
+
+https://github.com/user-attachments/assets/b462196e-b681-4bf4-ab7b-f2964044bb3e
+
+
