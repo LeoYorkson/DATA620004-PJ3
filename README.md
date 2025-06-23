@@ -36,24 +36,22 @@ python colmap2nerf.py --text ./data/train/sparse/0_txt --images ./data/train_ima
 CUDA_VISIBLE_DEVICES=3 python train.py --config configs/your_own_data.txt
 ```
 
-![image](https://github.com/user-attachments/assets/7a1c4133-028a-4a3f-b0e5-a25f4886fe41)
 
 ```
-CUDA_VISIBLE_DEVICES=2 python run_nerf.py --config config_lego.txt
+# 原版NeRF训练
+python run_nerf.py --config configs/own_data.txt
 ```
 
 ```
-CUDA_VISIBLE_DEVICES=1 python train.py --config configs/your_own_data.txt --ckpt log/train_88/train_88.th --render_only 1  --render_path 1
+# 加速版TensoRF训练
+python train.py --config configs/your_own_data.txt --ckpt log/train_88/train_88.th
 ```
 ```
-ffmpeg -i input.mp4 -vf "setpts=8.0*PTS,fps=10,scale=640:-1:flags=lanczos" slow.gif
+# 转换为gif文件
+ffmpeg -i input.mp4 -vf "setpts=2.0*PTS,fps=10,scale=640:-1:flags=lanczos" slow.gif
 
 ```
-![image](https://github.com/user-attachments/assets/2632f326-e0eb-4ca2-a7d0-d2aadaa066f6)
+![牛头怪_with_bg](https://github.com/user-attachments/assets/eb794283-158c-40ba-929c-36fef3b0dfa8)
 
-![image](https://github.com/user-attachments/assets/6182e48e-8c86-4470-b6e3-7bee1fdd246f)
-
-![test_slow](https://github.com/user-attachments/assets/dde7feb7-adda-447d-98b2-c0fe45fa0983)
-
-![image](https://github.com/user-attachments/assets/a207ba3b-7436-4fd3-a3b3-b4d9caf8027e)
+![牛头怪_wo_bg](https://github.com/user-attachments/assets/acfae0e0-6db4-421d-bb53-d8897c22049f)
 
