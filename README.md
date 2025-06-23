@@ -93,3 +93,22 @@ cd ./gaussian-splatting
 我们将每种方法生成的视频裁剪统一尺寸，并转换为 GIF 与 MP4：
 
 <div align="center"> <img src="https://github.com/user-attachments/assets/eb794283-158c-40ba-929c-36fef3b0dfa8" width="320"/> <img src="https://github.com/user-attachments/assets/acfae0e0-6db4-421d-bb53-d8897c22049f" width="320"/> </div>
+
+#### 📹 视频展示：
+[点击查看 MP4 渲染效果](https://github.com/user-attachments/assets/b462196e-b681-4bf4-ab7b-f2964044bb3e)
+
+> 🎥 使用命令行将 mp4 转换为 gif：
+```bash
+ffmpeg -i input.mp4 -vf "setpts=2.0*PTS,fps=10,scale=640:-1:flags=lanczos" output.gif
+```
+---
+### 🔗 模型与视频下载链接
+Google Drive 提供全部训练好的模型权重与渲染结果视频：
+
+👉 **[点击下载模型与视频文件](https://drive.google.com/drive/folders/12_LvpeNoJgO7-nbG5TcMjZ_zc8q7Ik5m?usp=sharing)**
+
+---
+
+如需复现，请参考各文件夹中的训练脚本及配置文件。如遇问题欢迎提 Issue 交流！
+
+
