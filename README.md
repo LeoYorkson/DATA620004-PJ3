@@ -26,12 +26,10 @@ TensoRF 将三维场建模为张量乘积形式，通过低秩张量分解显著
 
 ## 📷 数据采集与可视化
 
-我们使用手机对牛头人手办进行了多角度拍摄，并使用 COLMAP 重建了相机位姿。以下为示例渲染视图：
+我们使用手机对牛头人手办进行了多角度拍摄，为加速训练我们还将原始照片进行了压缩与背景扣除。然后根据项目要求，使用 COLMAP 重建了相机位姿。以下为部分数据集示例图。
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/eb794283-158c-40ba-929c-36fef3b0dfa8" width="400"/>
-  <img src="https://github.com/user-attachments/assets/acfae0e0-6db4-421d-bb53-d8897c22049f" width="400"/>
-</div>
+![image](https://github.com/user-attachments/assets/03ae128e-c1f6-4e20-b83e-03c675c525b5)
+
 
 ---
 
